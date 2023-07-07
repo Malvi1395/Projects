@@ -1,0 +1,49 @@
+<!-- <div class="container">
+  <div class="card">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" [(ngModel)]="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" [(ngModel)]="password" name="password" class="form-control" required>
+      </div>
+     <div class="button-container">
+  <button type="submit" class="btn btn-primary">Login</button>
+  <a routerLink="/register">
+    <button class="btn btn-primary">Register</button>
+  </a>
+
+  <a routerLink="/forgot-password"><button class="btn btn-primary">Forgot Password?</button></a>
+</div>
+    </form>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="card">
+      <h2>Login</h2>
+       
+  </div>
+    <div class="card">
+         
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="stname" placeholder="Enter Email"/>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="stname" placeholder="Enter Password"/>
+                </div>
+              <br>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+                </div>
+     
+              </form>
+         
+    </div>
+</div>
